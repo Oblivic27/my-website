@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ Nguyễn Ngọc Tiến Đạt | Gửi thông tin nhanh</title>
+    <meta name="description" content="Gửi thông tin liên hệ với Nguyễn Ngọc Tiến Đạt để trao đổi về học tập, công việc và các câu hỏi liên quan đến Công nghệ thông tin tại Đại học Gia Định.">
+</head>
+<body>
+
+    <header>
+        <h1>Nguyễn Ngọc Tiến Đạt</h1>
+        <p>Tôi là sinh viên ngành Công nghệ thông tin tại Đại học Gia Định.</p>
+
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Liên hệ với tôi</h2>
+            <p>Bạn có thể liên hệ với tôi qua email.</p>
+
+            <form>
+
+                <!-- Fieldset 1 -->
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+
+                    <label for="fullname">Họ và tên:</label>
+                    <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname"
+                        required
+                        minlength="2"
+                    >
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        required
+                    >
+                    <br><br>
+
+                    <label for="phone">Điện thoại:</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone"
+                        pattern="[0-9]{10,11}"
+                    >
+                    <br><br>
+
+                    <label for="birthday">Ngày sinh:</label>
+                    <input 
+                        type="date" 
+                        id="birthday" 
+                        name="birthday"
+                    >
+                    <br><br>
+
+                    <label for="university">Trường đại học:</label>
+                    <input 
+                        type="text" 
+                        id="university" 
+                        name="university"
+                        list="universities"
+                    >
+
+                    <datalist id="universities">
+                        <option value="Đại học Gia Định">
+                        <option value="Đại học Công nghiệp TP.HCM">
+                        <option value="Đại học Văn Lang">
+                        <option value="Đại học FPT">
+                    </datalist>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Fieldset 2 -->
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+
+                    <label for="subject">Chủ đề:</label>
+                    <select id="subject" name="subject">
+                        <option value="hoc-tap">Học tập</option>
+                        <option value="cong-viec">Công việc</option>
+                        <option value="khac">Khác</option>
+                    </select>
+
+                    <br><br>
+
+                    <p>Kênh liên hệ:</p>
+
+                    <input 
+                        type="radio" 
+                        id="contact-email" 
+                        name="channel" 
+                        value="email"
+                    >
+                    <label for="contact-email">Email</label>
+
+                    <input 
+                        type="radio" 
+                        id="contact-phone" 
+                        name="channel" 
+                        value="phone"
+                    >
+                    <label for="contact-phone">Phone</label>
+
+                    <input 
+                        type="radio" 
+                        id="contact-zalo" 
+                        name="channel" 
+                        value="zalo"
+                    >
+                    <label for="contact-zalo">Zalo</label>
+
+                    <br><br>
+
+                    <label for="message">Nội dung:</label>
+                    <br>
+
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        rows="5"
+                        required
+                        minlength="10"
+                    ></textarea>
+
+                    <br><br>
+
+                    <input 
+                        type="checkbox" 
+                        id="agree" 
+                        name="agree"
+                        required
+                    >
+                    <label for="agree">
+                        Tôi đồng ý với các điều khoản.
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Gửi</button>
+                <button type="reset">Xoá</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: 
+            <a href="mailto:nguyenngoctiendat@gmail.com">
+                nguyenngoctiendat@gmail.com
+            </a>
+            <br>
+            Liên hệ: Nguyễn Ngọc Tiến Đạt
+        </address>
+
+        <p>&copy; 2026 Nguyễn Ngọc Tiến Đạt</p>
+    </footer>
+
+</body>
+</html>
